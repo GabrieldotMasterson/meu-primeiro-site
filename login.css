@@ -65,5 +65,21 @@ input {
 }
 
 .register-link a:hover {
+    
     text-decoration: underline;
 }
+nav ul li a:hover {
+    color: #ff6600; 
+}
+
+
+nav ul li a.cta:hover {
+    color: #ffcc99; 
+}
+
+
+tr:hover {
+    color: #ff6600;
+    transition: color 0.3s ease;
+}
+

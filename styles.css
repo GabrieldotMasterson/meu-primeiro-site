@@ -17,6 +17,7 @@ header {
 }
 
 .logo {
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     color: #ff6600;
@@ -38,7 +39,8 @@ header {
 }
 
 
-.hero {
+.hero {  
+    font-family: 'Poppins', Arial, sans-serif;
     text-align: center;
     padding: 50px;
     background: linear-gradient(135deg, #ff6600, #6a1b9a);
@@ -135,6 +137,7 @@ button.next {
 }
 
 .menu li a {
+    font-family: 'Poppins', Arial, sans-serif;
     color: #777; 
     text-decoration: none; 
     transition: color 0.3s ease-in-out; 
@@ -146,6 +149,7 @@ button.next {
 }
 
 footer {
+    font-family: 'Poppins', Arial, sans-serif;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -167,6 +171,7 @@ footer {
 }
 
 .footer-links li a {
+    font-family: 'Poppins', Arial, sans-serif;
     color: #777; 
     text-decoration: none; 
     transition: color 0.3s ease-in-out;
@@ -174,4 +179,33 @@ footer {
 
 .footer-links li a:hover {
     color: #ff6600; 
+}
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.footer-links li a {
+    text-decoration: none;
+    color: #ff6600; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.footer-links li a:hover {
+    color: #ffcc99; 
 }

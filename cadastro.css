@@ -1,6 +1,6 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -87,12 +87,6 @@ button.botao:hover {
 }
 
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
 
 
 @media (max-width: 768px) {
@@ -104,4 +98,48 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+nav ul li a:hover {
+    color: #ff6600; 
+}
+
+
+nav ul li a.cta:hover {
+    color: #ffcc99; 
+}
+
+
+tr:hover {
+    color: #ff6600;
+    transition: color 0.3s ease;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.footer-links li a {
+    text-decoration: none;
+    color: #ff6600; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.footer-links li a:hover {
+    color: #ffcc99; 
 }
