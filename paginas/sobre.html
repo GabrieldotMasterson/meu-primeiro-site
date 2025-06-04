@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre - Rico Investimentos</title>
-    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Contato</a></li>
-                <li><a href="login.html">Acesse sua conta</a></li>
-                
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('header').innerHTML = data;
+        })
+        .catch(err => console.error('Erro ao carregar header:', err));
+    </script>
+
+    <img src="../imagens/hero.jpg" class="hero-img" alt="">
 
     <main>
         <section class="about">
@@ -29,14 +29,12 @@
         <section class="founders">
             <h2 class="fund">Fundadores</h2>
             <div class="founder">
-                <img src="imagens\f3887676-c256-488b-98e7-1d7cab5a20ca.jpeg" alt="Gabriel Barbosa">
                 <h3>Gabriel Barbosa</h3>
                 <p>Empreendedor e entusiasta do mercado financeiro. Atua na criação de estratégias de investimento inovadoras.</p>
                 <a href="https://www.instagram.com/gabr7.sb/?next=%2F/" target="_blank">Instagram</a>
                 <a href="https://github.com/barbosa676" target="_blank">GitHub</a>
             </div>
             <div class="founder">
-                <img src="imagens\afad8535-ef69-422f-a996-4b6b13788d7b.jpeg" alt="Gabriel Masterson">
                 <h3>Gabriel Masterson</h3>
                 <p>Especialista em tecnologia e investimentos. Focado em desenvolver soluções digitais para investidores.</p>
                 <a href="" target="_blank">Instagram</a>
@@ -45,15 +43,16 @@
         </section>
     </main>
 
-   <footer>
-         <p>© 2025 Rico Investimentos - Todos os direitos reservados</p>
-        <ul class="footer-links">
-            <li><a href="sobre.html">Sobre nós</a></li>
-            <li><a href="#">Política de privacidade</a></li>
-            <li><a href="#">Termos de uso</a></li>
-            <li><a href="contato.html">Contato</a></li>
-    </footer>
-
     <script src="script.js"></script>
+
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data;
+        })
+        .catch(err => console.error('Erro ao carregar header:', err));
+    </script>
 </body>
 </html>
