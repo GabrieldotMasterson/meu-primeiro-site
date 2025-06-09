@@ -1,146 +1,92 @@
-
-body {
-    font-family: 'Poppins', Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    box-sizing: border-box;
 }
 
+:root {
+    /* cores */
+    --preto-fosco: #0F0F0F;
+    --verde-neon: #00FF88;
+    --cinza-titanio: #2A2A2A;
+    --branco-gelo: #F2F2F2;
+    --vermelho-sangue: #FF2E2E;
+    --cor-suave: #B0BEC5; /* Azul suave */
+    --cor-destaque: #FF9800;
 
-header {
-    background-color: #fff;
-    padding: 15px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* tipografia */
+    --fonte-principal: 'Orbitron', sans-serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+
+    /* tamanhos de fonte */
+    --tamanho-fonte-principal: 2rem; /* 32px */
+    --tamanho-fonte-secundaria: 1.2rem; /* 19.2px */
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+body {
+    font-family: var(--fonte-secundaria);
+    background-color: var(--preto-fosco);
+    color: var(--branco-gelo);
+    line-height: 1.6;
+    overflow-x: hidden; /* tira a rolagem horizontal */
 }
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    font-family: 'Poppins', Arial, sans-serif;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 15px;
-}
-
-nav ul li a.cta {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-nav ul li a.active {
-    color: #ff6600;
-    text-decoration: underline;
-}
-
 
 .custos {
-    font-family: 'Poppins', Arial, sans-serif;
+    background: rgba(15, 15, 15, 0.98);
+    margin: 40px auto 0 auto;
+    max-width: 900px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,255,136,0.13);
+    padding: 48px 32px;
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(135deg, #ff6600, #4b0082);
-    color: #fff;
+    color: var(--branco-gelo);
+    font-family: var(--fonte-secundaria);
+    border: 2px solid var(--verde-neon);
 }
 
 .custos h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2.7em;
+    color: var(--verde-neon);
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px var(--preto-fosco), 0 0 8px var(--verde-neon);
 }
 
-
 table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
+    width: 100%;
+    margin: 32px 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(20, 20, 20, 0.92);
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,255,136,0.10);
+    color: var(--branco-gelo);
+    font-family: var(--fonte-secundaria);
 }
 
 th, td {
-    padding: 15px;
-    border: 1px solid #ddd;
+    padding: 18px 16px;
     text-align: left;
 }
 
 th {
-    background-color: #ff6600;
-    color: #fff;
+    background: var(--verde-neon);
+    color: var(--preto-fosco);
+    font-weight: 700;
+    border-bottom: 3px solid var(--cor-destaque);
+    font-family: var(--fonte-principal);
+    letter-spacing: 1px;
 }
 
 tr:nth-child(even) {
-    background-color: #f5f5f5;
+    background: rgba(0,255,136,0.07);
 }
-
-
-
-
-nav ul li a {
-    font-family: 'Poppins', Arial, sans-serif;
-    text-decoration: none;
-    color: #777;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-}
-
-
-nav ul li a:hover {
-    color: #ff6600; 
-}
-
-
-nav ul li a.cta:hover {
-    color: #ffcc99; 
-}
-
 
 tr:hover {
-    color: #ff6600;
-    transition: color 0.3s ease;
-}
-
-footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-.footer-links li a {
-    text-decoration: none;
-    color: #ff6600; 
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-
-.footer-links li a:hover {
-    color: #ffcc99; 
+    background: var(--cor-destaque);
+    color: var(--preto-fosco);
+    transition: background 0.2s, color 0.2s;
 }

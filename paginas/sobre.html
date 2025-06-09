@@ -19,7 +19,7 @@
 
     <img src="../imagens/hero.jpg" class="hero-img" alt="">
 
-    <main>
+    <main id="main-content-about">
         <section class="about">
             <h1>Sobre o Rico Investimentos</h1>
             <p>O <strong>Rico Investimentos</strong> é uma plataforma voltada para quem deseja maximizar seu patrimônio de forma segura e eficiente.</p>
@@ -28,24 +28,49 @@
 
         <section class="founders">
             <h2 class="fund">Fundadores</h2>
-            <div class="founder">
-                <h3>Gabriel Barbosa</h3>
-                <p>Empreendedor e entusiasta do mercado financeiro. Atua na criação de estratégias de investimento inovadoras.</p>
-                <a href="https://www.instagram.com/gabr7.sb/?next=%2F/" target="_blank">Instagram</a>
-                <a href="https://github.com/barbosa676" target="_blank">GitHub</a>
+            <div class="founders-list">
+                <div class="founder">
+                    <div class="founder-card">
+                        <div class="founder-front">
+                            <img src="../imagens/masterrs.jpg" alt="Gabriel Masterson" class="founder-photo">
+                        </div>
+                        <div class="founder-back">
+                            <h3>Gabriel Masterson</h3>
+                            <p>Especialista em tecnologia e investimentos. Focado em desenvolver soluções digitais para investidores.</p>
+                            <div class="social-links">
+                                <a href="#" target="_blank">Instagram</a>
+                                <a href="https://github.com/GabrieldotMasterson" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="founder">
+                    <div class="founder-card">
+                        <div class="founder-front">
+                            <img src="../imagens/bobosa.jpeg" alt="Gabriel Masterson" class="founder-photo">
+                        </div>
+                        <div class="founder-back">
+                            <h3>Gabriel Barbosa</h3>
+                            <p>Empreendedor e entusiasta do mercado financeiro. Atua na criação de estratégias de investimento inovadoras.</p>
+                            <div class="social-links">
+                                <a href="#" target="_blank">Instagram</a>
+                                <a href="https://github.com/GabrieldotMasterson" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="founder">
-                <h3>Gabriel Masterson</h3>
-                <p>Especialista em tecnologia e investimentos. Focado em desenvolver soluções digitais para investidores.</p>
-                <a href="" target="_blank">Instagram</a>
-                <a href="https://github.com/GabrieldotMasterson" target="_blank">GitHub</a>
+            <style>
+            </style>
             </div>
         </section>
     </main>
 
     <script src="script.js"></script>
 
-    <div id="footer"></div>
+    
+    <div id="footer" style="clear: both; margin-top: 40px;"></div>
     <script>
         fetch('footer.html')
         .then(res => res.text())
