@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Rico Investimentos</title>
+    <title>Login - Rico Investimentos</title>
     <link rel="stylesheet" href="estilos/estilos.css">
 
-        <!-- fontes -->
+    <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-
-    <script src="../scripts/cadastro.js"></script>
 </head>
 <body>
     <div id="header"></div>
@@ -20,31 +18,18 @@
         fetch('header.html')
         .then(res => res.text())
         .then(data => {
-        document.getElementById('header').innerHTML = data;
+            document.getElementById('header').innerHTML = data;
         })
         .catch(err => console.error('Erro ao carregar header:', err));
     </script>
 
     <main class="main-cadastro">
-        <section class="cadastro">
-            <h1>Crie sua conta</h1>
-            <form action="processar_cadastro.php" method="POST">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-
-
-                <label for="confirmar_senha">Confirme sua senha:</label>
-                <input type="password" id="confirmar_senha" name="confirmar_senha" required>
-
-                <button type="submit" class="botao">Cadastrar</button>
-            </form>
+        
+        <section class="agradecimento">
+            <h1>Obrigado por entrar em contato!</h1>
+            <p>Recebemos sua mensagem e em breve retornaremos com uma resposta.</p>
         </section>
+
     </main>
     
     <div id="footer" style="clear: both; margin-top: 40px;"></div>
@@ -56,6 +41,5 @@
         })
         .catch(err => console.error('Erro ao carregar header:', err));
     </script>
-  
 </body>
 </html>
