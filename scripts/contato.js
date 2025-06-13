@@ -16,6 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        alert('Cadastro realizado com sucesso!');
+        alert('Email enviado com sucesso!');
     });
 });

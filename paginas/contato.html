@@ -6,7 +6,7 @@
     <title>Contato - Rico Investimentos</title>
     <link rel="stylesheet" href="estilos/estilos.css">
 
-     <!-- fontes -->
+    <!-- Fontes personalizadas para um visual moderno -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
     <script src="../scripts/contato.js"></script>
 </head>
 <body>
+    <!-- Cabeçalho dinâmico -->
     <div id="header"></div>
     <script>
         fetch('header.html')
@@ -26,21 +27,38 @@
     </script>
 
     <main class="main-contato">
-        <section class="contato">
-            <h1>Fale Conosco</h1>
+        <section class="contato" aria-labelledby="titulo-contato">
+            <h1 id="titulo-contato">Fale Conosco</h1>
+            <p>Tem alguma dúvida, sugestão ou quer apenas bater um papo? Preencha o formulário abaixo e nossa equipe entrará em contato com você o mais breve possível!</p>
             <form action="https://formsubmit.co/gabriel.masterson2602@gmail.com" method="POST" id="question-form">
                 <div class="input-field">
                     <label for="email-input">Seu e-mail:</label>
-                    <input name="email" id="email-input" type="email" placeholder="Digite seu e-mail..." required autocomplete="email">
+                    <input 
+                        name="email" 
+                        id="email-input" 
+                        type="email" 
+                        placeholder="Digite seu e-mail..." 
+                        required 
+                        autocomplete="email"
+                        aria-required="true"
+                    >
                 </div>
 
                 <div class="input-field">
                     <label for="question-input">Sua mensagem:</label>
-                    <textarea name="message" id="question-input" placeholder="Digite sua dúvida ou sugestão..." required></textarea>
+                    <textarea 
+                        name="message" 
+                        id="question-input" 
+                        placeholder="Digite sua dúvida ou sugestão..." 
+                        required
+                        aria-required="true"
+                        rows="5"
+                    ></textarea>
                 </div>
                 <input type="hidden" name="_subject" id="subject-input" value="Nova mensagem de contato">
-                <!--<input type="hidden" name="_next" value="obrigado.html">-->
-                <button type="submit" class="botao">Enviar</button>
+
+                <!-- <input type="hidden" name="_next" value="obrigado.html"> -->
+                <button type="submit" class="botao">Enviar mensagem</button>
             </form>
         </section>
     </main>
@@ -50,9 +68,9 @@
         fetch('footer.html')
         .then(res => res.text())
         .then(data => {
-        document.getElementById('footer').innerHTML = data;
+            document.getElementById('footer').innerHTML = data;
         })
-        .catch(err => console.error('Erro ao carregar header:', err));
+        .catch(err => console.error('Erro ao carregar footer:', err));
     </script>
 </body>
 </html>
